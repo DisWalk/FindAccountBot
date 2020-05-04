@@ -9,7 +9,7 @@ var T = new Twit(config);
 //wr = wr+prev
 tweet()
 
-//setInterval(tweet , 1000 * 60 * 60 * 6 )
+setInterval(tweet , 1000 * 60 * 60 * 6 )
 
 function tweet(){
 
