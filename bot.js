@@ -4,9 +4,7 @@ var Jimp = require('jimp');
 var urlExists = require('url-exists');
 var config = require('./config')
 var T = new Twit(config);
-//var prev = "hello"
 
-//wr = wr+prev
 tweet()
 
 setInterval(tweet , 1000 * 60 * 60 * 6 )
@@ -84,7 +82,7 @@ function m(err,data,response){
                           if(file2.length-2>=0){
                           var wr = "Previous answer - "+prev+"  |  #";
                           prev = prev.substring(1);
-                          wr=wr+prev
+                          wr=wr+prev+"\n"+"#nofilter"
                         }  
                           var params = { status: wr, media_ids: [mediaIdStr] }
                     
