@@ -82,8 +82,8 @@ function m(err,data,response){
                           if(file2.length-2>=0){
                           var wr = "Previous answer - "+prev+"  |  #";
                           prev = prev.substring(1);
-                          wr=wr+prev+"\n"+"#nofilter"
-                        }else var wr="#nofilter"  
+                          wr=wr+prev+"\n"+"#nofilter #PicOfTheDay"
+                        }else var wr="#nofilter #PicOfTheDay"  
                           var params = { status: wr, media_ids: [mediaIdStr] }
                     
                           T.post('statuses/update', params, function (err, data, response) {
